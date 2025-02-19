@@ -17,9 +17,12 @@ git merge feature/add-selenium-tests
 ## Ramas de Release (release/):
 `git checkout -b release/v1.0`
 
+## Fusionar cambios a master cuando estés listo para producción:
+```sh
+git checkout master
+git merge release/v1.0
+```
 
-``
-``
 ``
 ``
 ``
