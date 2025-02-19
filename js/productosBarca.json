@@ -1,0 +1,122 @@
+[
+    {
+        "id": 3,
+        "nombreProducto": "Guantes de portero",
+        "precio": 450,
+        "descuento": 5,
+        "categoria": "Articulos",
+        "tallas": {
+            "S": 3,
+            "M": 4,
+            "L": 3,
+            "XL": 3,
+            "XXL": 3
+        },
+        "imagenes": [
+            "https://www.futbolemotion.com/imagesarticulos/203616/grandes/nike-guantes-fc-barcelona-2023-2024-black-midnight-navy-yellow-0.webp",
+            "https://www.futbolemotion.com/imagesarticulos/203616/grandes/nike-guantes-fc-barcelona-2023-2024-black-midnight-navy-yellow-1.webp",
+            "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202310/11/00125264210953____1__1200x1200.jpg"
+        ],
+        "cantidadTotal": 16
+    },
+    {
+        "id": 5,
+        "nombreProducto": "Pantalones deportivos FC Barcelona",
+        "precio": 10,
+        "descuento": 10,
+        "categoria": "Masculino",
+        "tallas": {
+            "S": 1,
+            "M": 2,
+            "L": 3,
+            "XL": 1,
+            "XXL": 1
+        },
+        "imagenes": [
+            "https://m.media-amazon.com/images/I/81Nu0gziVgL._AC_UF894,1000_QL80_.jpg",
+            "https://m.media-amazon.com/images/I/71j+-CR3STL._AC_UF894,1000_QL80_.jpg",
+            "https://m.media-amazon.com/images/I/81J2X75Mp6L._AC_UF894,1000_QL80_.jpg"
+        ],
+        "cantidadTotal": 8
+    },
+    {
+        "id": 1,
+        "nombreProducto": "Camiseta Barcelona 2025 gh",
+        "precio": 1200,
+        "descuento": 10,
+        "categoria": "Masculino",
+        "tallas": {
+            "S": 1,
+            "M": 2,
+            "L": 3,
+            "XL": 4,
+            "XXL": 2
+        },
+        "imagenes": [
+            "https://resources.claroshop.com/medios-plazavip/t1/1724606628075701djpg",
+            "https://acdn.mitiendanube.com/stores/003/636/118/products/camisa-jersey-shirt-titular-home-i-barcelona-azul-grena-24-25-nike-masculina-torcedor-fan-costa-ad0410f49611427e1517232588465976-1024-1024.png",
+            "https://www.futbolemotion.com/imagesarticulos/264551/grandes/camiseta-nike-fc-barcelona-primera-equipacion-2024-2025-nino-deep-royal-blue-noble-red-midnight-navy-0.webp"
+        ],
+        "cantidadTotal": 12
+    },
+    {
+        "id": 2,
+        "nombreProducto": "Camiseta Barcelona 2025 Femenil",
+        "precio": 1200,
+        "descuento": 10,
+        "categoria": "Femenino",
+        "tallas": {
+            "S": 1,
+            "M": 2,
+            "L": 3,
+            "XL": 2,
+            "XXL": 5
+        },
+        "imagenes": [
+            "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202407/19/00199455130288____2__1200x1200.jpg",
+            "https://www.futbolemotion.com/imagesarticulos/218515/grandes/camiseta-nike-fc-barcelona-primera-equipacion-2024-2025-mujer-deep-royal-blue-noble-red-midnight-navy-7.webp",
+            "https://i8.amplience.net/t/jpl/jdes_product_list?plu=jd_701078_al&qlt=85&qlt=92&w=320&h=320&v=1&fmt=auto"
+        ],
+        "cantidadTotal": 13
+    },
+    {
+        "id": 6,
+        "nombreProducto": "Camiseta Barcelona 2025 ",
+        "precio": 2500,
+        "descuento": 10,
+        "categoria": "Masculino",
+        "tallas": {
+            "S": 1,
+            "M": 2,
+            "L": 1,
+            "XL": 2,
+            "XXL": 1
+        },
+        "imagenes": [
+            "https://down-mx.img.susercontent.com/file/cn-11134207-7ras8-m1i4vzvv9f71e1",
+            "https://store.fcbarcelona.com/cdn/shop/files/FN9233-456_2.jpg?v=1721278022&width=1946",
+            "https://cf.camisetasfutbol.com.cn/upload/ttmall/img/20241107/17488e3a9c8eb0516f6eebd7f210ce08.png=z-400,400_f-webp"
+        ],
+        "cantidadTotal": 7
+    },
+    {
+        "id": 4,
+        "nombreProducto": "Balón Nike FC Barcelona",
+        "precio": 500,
+        "descuento": 15,
+        "categoria": "Articulos",
+        "tallas": {
+            "S": 1,
+            "M": 2,
+            "L": 3,
+            "XL": 4,
+            "XXL": 4
+        },
+        "imagenes": [
+            "https://www.futbolemotion.com/imagesarticulos/188825/grandes/balon-nike-fc-barcelona-2022-2023-yellow-university-red-0.webp",
+            "https://gfx.r-gol.com/media/res/products/829/162829/dc2419-728-4_1.jpg",
+            "https://www.butyzakupy.pl/pol_pl_Zolta-pilka-nozna-Nike-FC-Barcelona-SC3291-702-r4-2108_7.jpg"
+        ],
+        "cantidadTotal": 14
+    }
+]

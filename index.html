@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="FC Barcelona">
+    <meta name="description" content="Pagina oficial del FC Barcelona, un equipo de fútbol de primera división española.">
+    <meta name="keywords" content="fc barcelona, fútbol, primera división, españa, equipo">
+    <meta name="author" content="Joan Gamper">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Icono/Logo -->
+    <link rel="shortcut icon" type="image/svg" href="./img/fc-barcelona.svg">
+    <!-- Estilos SCSS -->
+    <link rel="stylesheet" href="./scss/styles.css">
+    <!-- Estilos CSS 
+    <link rel="stylesheet" href="./css/styles.css">-->
+    <!-- Font Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>FC Barcelona</title>
+</head>
+<body>
+    <!-- Header/Encabezado -->
+     <header>
+        <a class="logo" href="#inicio">
+            <img src="./img/fc-barcelona.svg" alt="FC Barcelona Logo" class="logo-img">
+            <h1>FC Barcelona</h1>
+        </a>
+
+        <!-- Menu Toggle para Mobile -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" hidden>
+        <label for="menu-toggle" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#equipo">El Equipo</a></li>
+                <li><a href="#partidos">Partidos</a></li>
+                <li><a href="#productosTarjetas">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carrito" class="cart-button"><i class="fa-solid fa-cart-plus"></i> <span id="numeroCarrito" class="numero-carrito"></span></a></li>
+                <li><a href="admin.html" class="user-button"><i class="fa-solid fa-user-tie"></i>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Progress Bar -->
+     <div class="progress-container">
+       <div class="progress-bar" id="progress-bar"></div>
+     </div>
+        <!-- Hero -->
+        <section class="hero" id="inicio">
+            <div class="hero-video">
+                <video autoplay muted loop>
+                    <source src="./media/FC Barcelona.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-overlay"></div> <!-- Capa de fondo oscuro -->
+            <div class="hero-text">
+                <h2>Bienvenidos a la pagina oficial del FC Barcelona</h2>
+                <p>més que un club</p>
+            </div>
+        </section>
+    <!-- Principal -->
+    <main>
+        <!-- Informacion sobre el equipo -->
+         <article id="equipo">
+            <h2>Sobre el equipo</h2>
+            <p>
+                El <strong>Fútbol Club Barcelona</strong> (FC Barcelona), fundado en 1899, es uno de los clubes más exitosos y emblemáticos del mundo, con sede en Barcelona, España. 
+                Conocido por su lema <i>Més que un club</i>, el Barça representa la cultura catalana y ha ganado numerosos títulos, incluyendo LaLiga, la Copa del Rey y la Liga de Campeones de la UEFA. 
+                Ha sido hogar de leyendas como Lionel Messi, Ferran Torres e Iniesta, y su estadio, el <strong>Camp Nou</strong>, es uno de los más grandes del mundo. 
+                Además, el club se distingue por su estilo de juego basado en la posesión del balón, conocido como tiki-taka.
+            </p><br/>
+            <ul>
+                <li>Entrenador: Hansi Flick</li>
+                <li>Jugadores: 12</li>
+                <li>Estadios: 1</li>
+            </ul>
+
+            <!-- Trajetas Slider con js y font awesome -->
+            <section class="integrantes">
+              <h3 class="section-title">Jugadores</h3>
+              <div class="slider-container">
+                <div class="slider">
+
+                </div>
+                <button class="prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </section>
+
+            <h3>Plantilla actual</h3>
+            <table id="tabla-jugadores">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Posición</th>
+                  <th>Número</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+         </article>
+         <!-- Titulos -->
+         <section class="trophies">
+            <h1 class="section-title">Títulos del FC Barcelona</h1>
+        
+            <div class="trophy-grid">
+              <div class="trophy-item">
+                <i class="fas fa-trophy"></i>
+                <h2>La Liga</h2>
+                <p class="trophy-count">27 Títulos</p>
+              </div>
+              
+              <div class="trophy-item">
+                <i class="fas fa-trophy"></i>
+                <h2>Liga de Campeones</h2>
+                <p class="trophy-count">5 Trofeos</p>
+              </div>
+              
+              <div class="trophy-item">
+                <i class="fas fa-trophy"></i>
+                <h2>Mundial de Clubes FIFA</h2>
+                <p class="trophy-count">13 Trofeos</p>
+              </div>
+              
+              <div class="trophy-item">
+                <i class="fas fa-trophy"></i>
+                <h2>Copa del Rey</h2>
+                <p class="trophy-count">31 Trofeos</p>
+              </div>
+            </div>
+          </section>
+
+         <!-- Partidos -->
+          <article id="partidos">
+            <h2>Proximos partidos</h2><!--
+            <ul>
+                <li>Partido 1: 14:00 - FC Barcelona vs. Atlelico M.</li>
+                <li>Partido 2: 16:00 - FC Barcelona vs. Real Madrid</li>
+                <li>Partido 3: 18:00 - FC Barcelona vs. Manchester United</li>
+            </ul>-->
+
+            <div class="liga-container">
+              <!-- Select para cambiar el valor de leagueId -->
+              <label for="leagueSelect">Selecciona una liga:</label>
+              <select id="leagueSelect">
+                  <option value="0" disabled selected>Elige una opción...</option>
+                  <option value="302">La Liga</option>
+                  <option value="300">Copa del Rey</option>
+                  <option value="3">UEFA Champions</option><!--
+                  <option value="383">Super Cup</option>-->
+              </select>
+            </div>
+            <div class="container" id="matches-container"></div>
+      
+            <!-- Slider de próximos partidos -->
+            <h2>Sigue al Barça en sus siguientes partidos</h2>
+            <div class="slider-container-partidos" id="slider-container">
+                <div class="slider-partidos">
+                    <!-- Aquí se agregarán los partidos dinámicamente -->
+                </div>
+                <button class="slider-prev" id="slider-prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="slider-next" id="slider-next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+         </article>
+         <!-- Galeria -->
+          <article id="galeria">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="./img/1.jpg" title="Leyenda" alt="fc barcelona">
+                <img src="./img/2.jpg" title="Suarez, Messi, Neymar" alt="fc barcelona">
+                <img src="./img/3.png" title="FC Barcelona" alt="fc barcelona">
+                <img src="./img/4.jpg" title="Bandera FC Barcelona" alt="fc barcelona">
+                <img src="./img/5.jpg" title="Estadio Club Barcelona" alt="fc barcelona">
+                <img src="./img/6.jpg" title="Copas Club Barcelona" alt="fc barcelona">
+            </div>
+          </article>
+          <!-- PRODUCTOS -->
+          <section id="productosTarjetas">
+            <h2>Productos Disponibles</h2>
+            <div id="tarjetasContainer" class="tarjetas-container">
+                <!-- Aquí se generarán las tarjetas de los productos -->
+            </div>
+          </section><br/>
+          <!-- SECTION SHOPPING -->
+          <section id="carrito" class="carrito-modal">
+            <!-- Modal de Confirmación con Formulario -->
+            <div id="modalConfirmacion" class="modal">
+              <div class="modal-contenido">
+                <span id="cerrarModal" class="modal-cerrar"><i class="fa-solid fa-xmark"></i></span>
+                <h2>Ingresa tus datos</h2>
+                
+                <!-- Formulario de envío de datos -->
+                <form id="formularioCompra">
+                  <label for="nombreCliente">Nombre completo:</label>
+                  <input type="text" id="nombreCliente" name="nombreCliente" required>
+
+                  <label for="telefonoCliente">Número telefónico:</label>
+                  <input type="text" id="telefonoCliente" name="telefonoCliente" required>
+
+                  <label for="correoCliente">Correo electrónico:</label>
+                  <input type="email" id="correoCliente" name="correoCliente" required>
+
+                  <div class="modal-botones">
+                    <button type="button" id="cancelarCompra">Cancelar</button>
+                    <button class="confirmar" type="submit" id="confirmarCompra">Confirmar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="modal-content">
+              <span class="close"><i class="fa-solid fa-xmark"></i></span>
+              <!-- CARD SHOPPING -->
+              <h2>Carrito de Compras</h2>
+              <div id="carritoContainer">
+
+              </div>
+            </div>
+            
+          </section>
+          <!-- Patrocinadores -->
+          <section class="sponsors-section">
+            <h2>Principales patrocinadores del Club</h2>
+            <div class="sponsors-logos">
+              <img src="./img/nike.svg" title="Nike" alt="Logo Nike" class="sponsor-logo">
+              <img src="./img/spotify.svg" title="Spotify" alt="Logo Spotify" class="sponsor-logo spotify">
+              <img src="./img/konami.svg" title="Konami" alt="Logo Konami" class="sponsor-logo">
+            </div>
+          </section>
+          <!-- Contacto -->
+           <article id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tiene alguna duda o consulta sobre el FC Barcelona, no dude en contactar con nosotros.</p>
+            <ul>
+                <li>Email: info@barcelonafc.com</li>
+                <li>Teléfono: +34 2348 345 678</li>
+                <li>Dirección: Calle 123, 456, Barcelona</li>
+            </ul>
+
+            <h2>Formulario de contacto</h2>
+            <form id="contactForm" novalidate method="POST" enctype="text/plain"> <!-- action="mailto:info@barcelonafc.com" -->
+                <fieldset>
+                    <legend>Datos de Contacto</legend>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="45" placeholder="Introduce tu nombre" pattern="[A-Za-z\s]+" title="El nombre solo puede contener letras y espacios">
+                    <div class="error" id="nameError"></div><br><br>
+                
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com" title="Introduce un correo electrónico válido"><!--  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" -->
+                    <div class="error" id="emailError"></div><br><br>
+                
+                    <label for="opciones">Selecciona una opción:</label>
+                    <select name="opciones" id="opciones" required>
+                        <option value="" disabled selected>Elige una opción...</option>
+                        <option value="Productos">Productos</option>
+                        <option value="Boletos">Boletos</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <div class="error" id="optionsError"></div><br><br>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" required minlength="10" maxlength="100" placeholder="Escribe tu mensaje" title="El mensaje debe tener al menos 10 caracteres"></textarea>
+                    <div class="error" id="messageError"></div>
+                </fieldset><br>
+                
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </form>            
+           </article>
+         <!-- redes sociales -->
+         <section class="social-media">
+            <h1 class="section-title">Sigue al Barça en las Redes Sociales</h1>
+        
+            <div class="social-grid">
+              <a href="#" class="social-item" title="Facebook">
+                <i class="fab fa-facebook"></i>
+                <h2>FC Barcelona</h2>
+                <p>@fcbarcelona</p>
+              </a>
+        
+              <a href="#" class="social-item" title="Twitter">
+                <i class="fab fa-twitter"></i>
+                <h2>FC Barcelona</h2>
+                <p>@fcbarcelona_es</p>
+              </a>
+
+              <a href="#" class="social-item" title="Instagram">
+                <i class="fab fa-instagram"></i>
+                <h2>FC Barcelona</h2>
+                <p>@fcbarcelona</p>
+              </a>
+        
+              <a href="#" class="social-item" title="Youtube">
+                <i class="fab fa-youtube"></i>
+                <h2>FC Barcelona</h2>
+                <p>Youtube</p>
+              </a>
+        
+              <a href="#" class="social-item" title="Tiktok">
+                <i class="fab fa-tiktok"></i>
+                <h2>FC Barcelona</h2>
+                <p>TikTok</p>
+              </a>
+        
+              <a href="#" class="social-item" title="Spotify">
+                <i class="fab fa-spotify"></i>
+                <h2>FC Barcelona</h2>
+                <p>Spotify</p>
+              </a>
+            </div>
+          </section>
+    </main>
+    <!-- Footer/Pie de pagina -->
+    <footer class="footer">
+        <!-- Parte superior del footer con 7 columnas -->
+        <div class="footer-top">
+          <div class="footer-column">
+            <h3>Porteros</h3>
+            <ul>
+              <li>Marc-André ter Stegen</li>
+              <li>Iñaki Peña</li>
+              <li>Wojciech Szczęsny</li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h3>Defensas</h3>
+            <ul>
+              <li>Pau Cubarsí</li>
+              <li>Alejandro Balde</li>
+              <li>Ronald Araujo</li>
+              <li>Iñigo Martinez</li>
+              <li>Andreas Christensen</li>
+              <li>Jules Kounde</li>
+              <li>Eric García</li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h3>Centrocampistas</h3>
+            <ul>
+              <li>Gavi</li>
+              <li>Pedri</li>
+              <li>Pablo Torre</li>
+              <li>Fermín López</li>
+              <li>Marc Casadó</li>
+              <li>Dani Olmo</li>
+              <li>Frenkie de Jong</li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h3>Delanteros</h3>
+            <ul>
+              <li>Ferran Torres</li>
+              <li>Robert Lewandowski</li>
+              <li>Ansu Fati</li>
+              <li>Raphinha</li>
+              <li>Pau Víctor</li>
+              <li>Lamine Yamal</li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h3>Productos Barça</h3>
+            <ul>
+              <li>Culers Membership</li>
+              <li>Barça One</li>
+              <li>TV Apps</li>
+              <li>Entradas y Museo</li>
+              <li>Barça App</li>
+              <li>Tienda online</li>
+              <li>Centro de Ayuda/FAQs</li>
+              <li>Hazte Beta Tester</li>
+              <li>Black Friday</li>
+              <li>Navidad Barça</li>
+              <li>Juegos Barça</li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h3>Club</h3>
+            <ul>
+              <li>Spotify Camp Nou</li>
+              <li>Canal ético</li>
+              <li>Escudo</li>
+              <li>Himno</li>
+              <li>Trabaja en las Barça Stores</li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h3>Historia</h3>
+            <ul>
+              <li>2008-16. Los mejores años de nuestra historia</li>
+              <li>La era del Dream Team</li>
+              <li>1950-61. Kubala y su tiempo</li>
+              <li>1899-1909. Nacimiento y supervivencia</li>
+              <li>Barça en Champions League</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Parte inferior del footer -->
+        <div class="footer-bottom">
+          <div class="footer-left">
+            <!-- Logo y Título -->
+            <div class="logo-container">
+              <img src="./img/fc-barcelona.svg" alt="FC Barcelona Logo" class="footer-logo">
+              <h1 class="footer-title">FC Barcelona</h1>
+            </div>
+            <p><strong>© Copyright FC Barcelona</strong> Página Oficial del FC Barcelona</p>
+          </div>
+          <div class="footer-right">
+            <ul>
+              <li><a href="#">Términos legales</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Accesibilidad</a></li>
+              <li><a href="#">Contáctenos</a></li>
+              <li><a href="#">Centro de ayuda/FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  emailjs.init('3p7MKtXhKdZP5kEAK')
+</script>
+    <script type="text/javascript" src="./js/contactSend.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

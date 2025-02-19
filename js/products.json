@@ -1,0 +1,64 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombreProducto": "Camiseta Barcelona 2025",
+            "precio": 1200.00,
+            "descuento": 10,
+            "categoria": "Masculino",
+            "imagenes": [
+                "https://example.com/imagen1.jpg",
+                "https://example.com/imagen2.jpg",
+                "https://example.com/imagen3.jpg"
+            ],
+            "tallas": {
+                "S": 50,
+                "M": 40,
+                "L": 30,
+                "XL": 20,
+                "XXL": 10
+            },
+            "cantidadTotal": 150
+        },
+        {
+            "id": 2,
+            "nombreProducto": "Camiseta Barcelona 2025 Femenino",
+            "precio": 800.00,
+            "descuento": 10,
+            "categoria": "Femenino",
+            "imagenes": [
+                "https://example.com/imagen1kids.jpg",
+                "https://example.com/imagen2kids.jpg",
+                "https://example.com/imagen3kids.jpg"
+            ],
+            "tallas": {
+                "S": 30,
+                "M": 25,
+                "L": 20,
+                "XL": 0,
+                "XXL": 0
+            },
+            "cantidadTotal": 75
+        },
+        {
+            "id": 3,
+            "nombreProducto": "Camiseta Barcelona 2025 Retro",
+            "precio": 1500.00,
+            "descuento": 15,
+            "categoria": "Masculino",
+            "imagenes": [
+                "https://example.com/imagen1retro.jpg",
+                "https://example.com/imagen2retro.jpg",
+                "https://example.com/imagen3retro.jpg"
+            ],
+            "tallas": {
+                "S": 10,
+                "M": 5,
+                "L": 8,
+                "XL": 12,
+                "XXL": 9
+            },
+            "cantidadTotal": 44
+        }
+    ]
+}

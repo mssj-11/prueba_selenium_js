@@ -1,0 +1,180 @@
+{
+    "jugadores": [
+      {
+        "id": 1,
+        "nombre": "Marc-André ter Stegen",
+        "posicion": "Portero",
+        "numero": 1,
+        "partidos": 420,
+        "goles": 174,
+        "asistencias": 983,
+        "imgSrc": "./img/integrantes/j9.webp",
+        "alt": "Marc-André Ter Stegen"
+      },
+      {
+        "id": 2,
+        "nombre": "Ferran Torres",
+        "posicion": "Delantero",
+        "numero": 7,
+        "partidos": 132,
+        "goles": 31,
+        "asistencias": 14,
+        "imgSrc": "./img/integrantes/j2.webp",
+        "alt": "Ferran Torres"
+      },
+      {
+        "id": 3,
+        "nombre": "Ronald Araujo",
+        "posicion": "Defensor",
+        "numero": 4,
+        "partidos": 153,
+        "goles": 8,
+        "asistencias": 6,
+        "imgSrc": "./img/integrantes/j3.webp",
+        "alt": "Ronald Araujo"
+      },
+      {
+        "id": 4,
+        "nombre": "Lamine Yamal",
+        "posicion": "Delantero",
+        "numero": 19,
+        "partidos": 75,
+        "goles": 16,
+        "asistencias": 19,
+        "imgSrc": "./img/integrantes/j4.webp",
+        "alt": "Lamine Yamal"
+      },
+      {
+        "id": 5,
+        "nombre": "Dani Olmo",
+        "posicion": "Centrocampista",
+        "numero": 20,
+        "partidos": 17,
+        "goles": 6,
+        "asistencias": 3,
+        "imgSrc": "./img/integrantes/j5.webp",
+        "alt": "Dani Olmo"
+      },
+      {
+        "id": 6,
+        "nombre": "Gavi",
+        "posicion": "Centrocampista / Defensor",
+        "numero": 6,
+        "partidos": 128,
+        "goles": 9,
+        "asistencias": 14,
+        "imgSrc": "./img/integrantes/j17.webp",
+        "alt": "Gavi"
+      },
+      {
+        "id": 7,
+        "nombre": "Frenkie de Jong",
+        "posicion": "Centrocampista",
+        "numero": 21,
+        "partidos": 229,
+        "goles": 18,
+        "asistencias": 20,
+        "imgSrc": "./img/integrantes/j7.webp",
+        "alt": "Frenkie de Jong"
+      },
+      {
+        "id": 8,
+        "nombre": "Fermín López",
+        "posicion": "Centrocampista",
+        "numero": 16,
+        "partidos": 61,
+        "goles": 12,
+        "asistencias": 3,
+        "imgSrc": "./img/integrantes/j8.webp",
+        "alt": "Fermín López"
+      },
+      {
+        "id": 9,
+        "nombre": "Pedri",
+        "posicion": "Centrocampista",
+        "numero": 8,
+        "partidos": 174,
+        "goles": 24,
+        "asistencias": 16,
+        "imgSrc": "./img/integrantes/j10.webp",
+        "alt": "Pedri"
+      },
+      {
+        "id": 10,
+        "nombre": "Robert Lewandowski",
+        "posicion": "Delantero",
+        "numero": 9,
+        "partidos": 122,
+        "goles": 85,
+        "asistencias": 20,
+        "imgSrc": "./img/integrantes/j6.webp",
+        "alt": "Robert Lewandowski"
+      },
+      {
+        "id": 11,
+        "nombre": "Cubarsí",
+        "posicion": "Delantero",
+        "numero": 2,
+        "partidos": 53,
+        "goles": 2,
+        "asistencias": 2,
+        "imgSrc": "./img/integrantes/j11.webp",
+        "alt": "Cubarsí"
+      },
+      {
+        "id": 12,
+        "nombre": "Ansu Fati",
+        "posicion": "Delantero",
+        "numero": 10,
+        "partidos": 120,
+        "goles": 29,
+        "asistencias": 6,
+        "imgSrc": "./img/integrantes/j12.webp",
+        "alt": "Ansu Fati"
+      },
+      {
+        "id": 13,
+        "nombre": "Raphinha",
+        "posicion": "Delantero",
+        "numero": 11,
+        "partidos": 115,
+        "goles": 40,
+        "asistencias": 32,
+        "imgSrc": "./img/integrantes/j1.webp",
+        "alt": "Raphinha"
+      },
+      {
+        "id": 14,
+        "nombre": "Pau Víctor",
+        "posicion": "Defensor",
+        "numero": 18,
+        "partidos": 18,
+        "goles": 2,
+        "asistencias": 1,
+        "imgSrc": "./img/integrantes/j14.webp",
+        "alt": "Pau Víctor"
+      },
+      {
+        "id": 15,
+        "nombre": "Andreas Christensen",
+        "posicion": "Defensa",
+        "numero": 15,
+        "partidos": 75,
+        "goles": 4,
+        "asistencias": 3,
+        "imgSrc": "./img/integrantes/j15.webp",
+        "alt": "João Félix"
+      },
+      {
+        "id": 16,
+        "nombre": "Iñigo Martinez",
+        "posicion": "Defensa",
+        "numero": 5,
+        "partidos": 52,
+        "goles": 2,
+        "asistencias": 2,
+        "imgSrc": "./img/integrantes/j16.webp",
+        "alt": "Iñigo Martinez"
+      }
+    ]
+}

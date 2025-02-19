@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg" href="./img/fc-barcelona.svg">
+    <title>Panel Administrador - FC Barcelona</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    
+    <a href="index.html" class="btn-home"><i class="fa-solid fa-arrow-left"></i> Volver al Inicio</a>
+
+    <!-- Add/Edit Product FORM Section -->
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+        <span id="cerrarModal" class="cerrar"><i class="fas fa-times"></i></span>
+        <h2>Agrega un producto</h2>
+        <form id="formProducto">
+            <input type="hidden" id="productoId">
+            
+            <label for="nombreProducto">Nombre del producto</label>
+            <input type="text" id="nombreProducto" placeholder="Nombre del producto" required>
+            
+            <!-- Fila de Precio y Categoría -->
+            <div class="fila">
+                <div class="campo">
+                    <label for="precio">Precio</label>
+                    <input type="number" id="precio" placeholder="Precio" step="0.01" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="opciones">Categoría del Producto:</label>
+                    <select name="opciones" id="opciones" required>
+                        <option value="" disabled selected>Elige una opción...</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Articulos">Articulos</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Campo Cantidad y Descuento -->
+            <div class="fila"><!--
+                <div class="campo">
+                    <label for="cantidad">Cantidad total</label>
+                    <input type="number" id="cantidad" placeholder="Cantidad" required>
+                </div>-->
+                
+                <div class="campo">
+                    <label for="descuento">Descuento (%)</label>
+                    <input type="number" id="descuento" placeholder="Descuento (%)" max="85" required>
+                </div>
+            </div>
+            
+            <!-- Tallas y Cantidades -->
+            <fieldset>
+                <legend>Tallas y Cantidades</legend>
+                <div class="tallas-container">
+                    <div class="talla">
+                        <label for="tallaS">S (Small)</label>
+                        <input type="number" id="tallaS" placeholder="Cantidad en talla S" min="0">
+                    </div>
+                    <div class="talla">
+                        <label for="tallaM">M (Medium)</label>
+                        <input type="number" id="tallaM" placeholder="Cantidad en talla M" min="0">
+                    </div>
+                    <div class="talla">
+                        <label for="tallaL">L (Large)</label>
+                        <input type="number" id="tallaL" placeholder="Cantidad en talla L" min="0">
+                    </div>
+                    <div class="talla">
+                        <label for="tallaXL">XL (Extra Large)</label>
+                        <input type="number" id="tallaXL" placeholder="Cantidad en talla XL" min="0">
+                    </div>
+                    <div class="talla">
+                        <label for="tallaXXL">XXL (Double Extra Large)</label>
+                        <input type="number" id="tallaXXL" placeholder="Cantidad en talla XXL" min="0">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Fila de Imágenes -->
+            <div class="fila-imagenes">
+                <div class="campo">
+                    <label for="imagenProducto">URL de la imagen principal</label>
+                    <input type="url" id="imagenProducto" placeholder="URL de la imagen" required>
+                </div>
+
+                <div class="campo">
+                    <label for="imagenProductoSecundaria">URL de la segunda imagen</label>
+                    <input type="url" id="imagenProductoSecundaria" placeholder="URL de la segunda imagen" required>
+                </div>
+
+                <div class="campo">
+                    <label for="imagenProductoTres">URL de la tercer imagen</label>
+                    <input type="url" id="imagenProductoTres" placeholder="URL de la tercer imagen" required>
+                </div>
+            </div>
+
+            <button type="submit"><i class="fa-solid fa-floppy-disk"></i> Guardar Producto</button>
+        </form>
+        </div>
+    </div>
+    
+
+    <!-- Tabla de Productos -->
+    <section id="section-tablaProductos">
+        <!-- Botón para abrir el modal -->
+        <button id="abrirModal" class="btn-abrir"><i class="fa-solid fa-plus"></i> Agregar Producto</button>
+        <h2>Lista de Productos</h2>
+        <div>
+            <table id="tablaProductos">
+            <thead>
+                <tr>
+                    <th class="text-center">Producto
+                        <div class="th__container-btn">
+                            <button onclick="ordenarPorNombre('asc')"><i class="fa-solid fa-chevron-up"></i></button>
+                            <button onclick="ordenarPorNombre('desc')"><i class="fa-solid fa-chevron-down"></i></button>
+                        </div>
+                    </th>
+                    <th>Images</th>
+                    <th class="text-center">Precio
+                        <div class="th__container-btn">
+                            <button onclick="ordenarPorPrecio('asc')"><i class="fa-solid fa-chevron-up"></i></button>
+                            <button onclick="ordenarPorPrecio('desc')"><i class="fa-solid fa-chevron-down"></i></button>
+                        </div>
+                    </th>
+                    <th class="text-center">Descuento
+                        <div class="th__container-btn">
+                            <button onclick="ordenarPorDescuento('asc')"><i class="fa-solid fa-chevron-up"></i></button>
+                            <button onclick="ordenarPorDescuento('desc')"><i class="fa-solid fa-chevron-down"></i></button>
+                        </div>
+                    </th>
+                    <th>Categoría</th>
+                    <th>Tallas</th>
+                    <th>Cantidad Total</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Agregar más productos aquí -->
+            </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>
